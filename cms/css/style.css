@@ -68,13 +68,14 @@ nav li.cart a span {
 /* For inventory */
 .inventory {
     text-align: center;
-    width: 50%;
+    
+    font-size: 1rem;
     margin-top: 0.4rem;
     margin-bottom: 2rem;
 }
 
 .inventory h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     color: #2874f0;
     text-transform: uppercase;
     letter-spacing: 2px;
