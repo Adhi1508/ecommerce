@@ -231,17 +231,23 @@ footer p {
     font-size: 2rem;
     margin: 0 1rem;
 }
+.loginput {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    margin-top: 30px;
+    height: 40px;
+    width: 300px;
+    margin-left: 90px;
+    border-radius: 10px;
+    border: 3px solid #708188;
+    text-align: center;
+  
+  }
 
 /* End of footer */
 
 /**************** Start of the login *************/
-.LogBody {
-    /* height : 570px; */
-    margin-bottom: 8rem;
-    margin-top: 5rem;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #conlogin {
     width: 100%;
@@ -256,6 +262,12 @@ footer p {
     align-content: center;
     /* display: flexbox; */
     justify-content: center;
+}
+.LoginBody {
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* The login input */

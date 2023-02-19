@@ -23,16 +23,24 @@
     <!-- End of navigation bar -->
 
     <!-- Start of admin login -->
-    <div class="LogBody">
-        <div id="conlogin">
-            <h2 id="Login-title">ADMIN LOGIN</h2>
-            <img src="./images/LogIcon.jpg" class="Login-icon">
-            <input class="loginput" id="Uname" type="text" placeholder="username" required />
-            <br>
-            <input class="loginput" id="pass" type="password" placeholder="password" required />
-            <br>
-            <button id="logbut">login</button>
-        </div>
+    <div class="LoginBody">
+        <form onsubmit action="getadminLogin.php" method="post">
+            <div id="conlogin">
+                <h2 id="Login-title">ADMIN LOGIN</h2>
+                <img src="../images/LogIcon.jpg" class="Login-icon">
+
+                <!-- Entry box for username -->
+                <input class="loginput" id="uname" type="text" placeholder="Username" name="uname" required />
+                <br>
+
+                <!-- Entry box for password -->
+                <input class="loginput" id="pass" type="password" placeholder="Password" name="pass" required />
+                <br>
+
+                <!-- login button -->
+                <button id="logbut" type="submit">login</button>
+            </div>
+        </form>
     </div>
     <!-- End of admin login -->
 
