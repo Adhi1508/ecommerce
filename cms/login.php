@@ -16,8 +16,8 @@
         <ul>
             <li class="cart"><a href="#cart"><i
                         class="fas fa-dumbbell"></i><span></span><span></span><span>FitFury</span></a></li>
-            <li><a href="./cms/cms.php">Home</a></li>
-            <li><a href="./login.php">Login</a></li>
+            <li><a href="cms.php">Home</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
     </nav>
     <!-- End of navigation bar -->
