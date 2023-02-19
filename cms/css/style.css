@@ -1,0 +1,322 @@
+/******************* Start of navigation ***************/
+
+/* Dispalying the nav bar as blue */
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #2874f0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    float: left;
+}
+
+/* Formatting the anchor tags in the nav bar */
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 35px;
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* On hover, the text in the navigation bar becomes darker */
+nav a:hover {
+    background-color: #111;
+}
+
+nav li.cart a span {
+    margin-left: 5px;
+    font-size: 1.0rem;
+    color: white;
+}
+
+/****************** End of navigation **********************/
+
+/************ start of all headings(h2) ****************/
+
+/* For actions */
+.top-deals {
+    text-align: center;
+    width: 100%;
+    margin-top: 7.2rem;
+    margin-bottom: 2rem;
+}
+
+.top-deals h2 {
+    font-size: 4rem;
+    color: #2874f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* For inventory */
+.inventory {
+    text-align: center;
+    width: 100%;
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.inventory h2 {
+    font-size: 4rem;
+    color: #2874f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* For customer order table */
+.customer-order {
+    text-align: center;
+    width: 100%;
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.customer-order h2 {
+    font-size: 4rem;
+    color: #2874f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*********************** End of all headings(h2) **************************/
+
+/***********  Start of Container of Actions and Inventory *****************/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container,
+.cart-container {
+    width: 49%;
+}
+
+/**************  End of Container of Actions and Inventory *****************/
+
+/********* Start of css tables for both customer order and inventory ******/
+.cart-container {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.cart-container table {
+    width: 100%;
+    background-color: rgb(224, 218, 218);
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.cart-container th,
+.cart-container td {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background-color: rgb(224, 218, 218);
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.cart-container th {
+    background-color: green;
+    color: white;
+
+}
+
+/* Buuton after each row in the customer order table */
+.action-btn {
+    background-color: #ff3232;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/********* End of css tables for both customer order and inventory ******/
+
+
+/****** Start of Actions and inventory ********/
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* The input text for the action  */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+}
+
+/* The text for the button in action  */
+input[type="submit"] {
+    width: 33%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin: 60%; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+/* On hover, buttons change colour */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* End of Actions and inventory */
+
+/* Start of footer */
+footer {
+    background-color: #2874f0;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+/* The socia media icons in the footer */
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+/* End of footer */
+
+/**************** Start of the login *************/
+.LogBody {
+    /* height : 570px; */
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#conlogin {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    translate: 50%;
+    margin-left: 14%;
+    border: 10px solid #708188;
+    background-color: #25363d;
+    align-content: center;
+    /* display: flexbox; */
+    justify-content: center;
+}
+
+/* The login input */
+.LogBody .loginput {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    margin-top: 30px;
+    height: 40px;
+    width: 300px;
+    margin-left: 90px;
+    border-radius: 10px;
+    border: 3px solid #708188;
+    text-align: center;
+
+}
+
+/* The login button */
+#logbut {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 40px 200px 100px;
+    height: 50px;
+    width: 100px;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+
+/* The login image on the top */
+.Login-icon {
+    width: 140px;
+    height: 130px;
+    margin-left: 180px;
+    margin-top: 2px;
+    border-radius: 120px;
+
+}
+
+/* The login title on the top */
+#Login-title {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold1;
+    letter-spacing: 3px;
+    margin-top: 25px;
+
+
+}
+
+/* The hero image in the background */
+#Body-back {
+    background-image: url(../images/body2-test.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 105%;
+}
+
+
+
+/**************** End of the login *************/

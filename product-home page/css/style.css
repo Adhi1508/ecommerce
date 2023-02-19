@@ -1,0 +1,494 @@
+/******************* Start of navigation ***************/
+
+/* Dispalying the nav bar as blue */
+nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #2874f0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+  float: left;
+}
+
+/* Formatting the anchor tags in the nav bar */
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* On hover, the text in the navigation bar becomes darker */
+nav a:hover {
+  background-color: #111;
+}
+
+/* Formatting the cart in the nav bar */
+nav li.cart {
+  font-size: 1.5rem;
+  position: flex;
+  float: right;
+}
+
+/* Formatting the text of the cart in the nav bar */
+nav li.cart a {
+  font-size: 1.5rem;
+  padding: 20px 25px;
+}
+
+/* Giving size and colour of the cart section in the nav bar */
+nav li.cart a i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+nav li.cart a span {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* The search bar in the nav bar */
+nav .search-form {
+  position: flex;
+}
+
+/* The text of search bar in the nav bar */
+nav .search-form input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1.0rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* The search icon in the nav bar */
+nav .search-form button {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 1.0rem;
+}
+
+/* On hover, the search icon in the nav bar becomes darker*/
+nav .search-form button:hover {
+  background-color: #45a049;
+}
+
+/****************** End of navigation **********************/
+
+/******************* Start of Slideshow ********************/
+.slideshow-container {
+  margin-top: 2rem;
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* Hide the images by default */
+.slideshow-container .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.slideshow-container .prev,
+.slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* On hover, add a darker effect on the dot */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/******************* End of Slideshow ********************/
+
+
+/******* Start of all the heading on the product page(TOP DEALS and YOUR CART) *********/
+.top-deals {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.top-deals h2 {
+  font-size: 5rem;
+  color: #2874f0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/******* End of all the heading on the product page *********/
+
+/********** Start of the display of product *****************/
+.product-container {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  margin: 10px;
+  text-align: center;
+}
+
+.product p {
+  margin: 10px 0;
+  font-size: larger;
+}
+
+/* for the images of the product */
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add to Cart button */
+.add-to-cart {
+  background-color: green;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/********** End of the display of product *****************/
+
+/********** Start of cart table ************/
+.cart-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/* Formatting the table */
+.cart-container table {
+  width: 100%;
+  background-color: rgb(224, 218, 218);
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+/* Formatting the table cells */
+.cart-container th,
+.cart-container td {
+  padding: 10px;
+  border: 3px solid #ccc;
+  background-color: rgb(224, 218, 218);
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-container th {
+  background-color: green;
+  color: white;
+}
+
+/* Displaying the total of the product*/
+.total {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+/* Checkout button */
+.cart-container .checkout {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #00BFFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+/* On hover, checkout button change colour */
+.cart-container .checkout:hover {
+  background-color: #008080;
+}
+
+/********** End of cart table ************/
+
+
+
+/********** Start of footer ************/
+footer {
+  background-color: #2874f0;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* The size of the text in the footer */
+footer p {
+  font-size: 1.5rem;
+}
+
+/* The social media icons in the footer */
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+/********** End of footer ************/
+
+
+/**************** Start of the login and sign up *************/
+.LoginBody {
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoutBody {
+  margin-bottom: 15rem;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.SignBody
+{
+    margin-bottom: 3.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+#conlogin {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 20px;
+  height: 500px;
+  width: 500px;
+  translate: 50%;
+  margin-left: 14%;
+  border: 10px solid #708188;
+  background-color: #25363d;
+  align-content: center;
+  justify-content: center;
+}
+
+#conlogout {
+  margin-top: 40px;
+  height: 300px;
+  width: 450px;
+  translate: 50%;
+  margin-left: 20%;
+  background-color: #25363d;
+  border: 5px solid #708188;
+}
+
+
+
+/* The difference for login page and sign up page */
+#conSign {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 740px;
+  width: 500px;
+  translate: 50%;
+  margin-left: 14%;
+  border: 10px solid #708188;
+  background-color: #25363d;
+  align-content: center;
+  justify-content: center;
+}
+
+
+#strength
+{
+    text-align: center;
+}
+
+/* The login input */
+.loginput {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 19px;
+  margin-top: 30px;
+  height: 40px;
+  width: 300px;
+  margin-left: 90px;
+  border-radius: 10px;
+  border: 3px solid #708188;
+  text-align: center;
+
+}
+
+/* The login button */
+#logbut {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 40px 200px 100px;
+  height: 50px;
+  width: 100px;
+  letter-spacing: 6px;
+  cursor: pointer;
+}
+
+#logout1but {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  letter-spacing: 6px;
+  cursor: pointer;
+  margin-left:15%;
+}
+#logout2but {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  text-align:center;
+  height: 50px;
+  width: 100px;
+  letter-spacing: 6px;
+  cursor: pointer;
+  margin-left:25%;
+}
+
+/* The login image on the top */
+.Login-icon {
+  width: 140px;
+  height: 130px;
+  margin-left: 180px;
+  margin-top: 2px;
+  border-radius: 120px;
+}
+
+/* The login title on the top */
+#Login-title {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+#Login-para{
+
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+
+/* The hero image in the background */
+#Body-back {
+  background-image: url(../images/body2-test.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 115%;
+}
+
+/**************** End of the login and sign up *************/
