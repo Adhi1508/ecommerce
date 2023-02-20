@@ -105,5 +105,38 @@
                 echo'</div>';
             } 
         }
-
     ?>
+    <br>
+    <hr>
+    <div class="top-deals">
+        <h2>Most popular</h2>
+        <div class="product-container">
+
+
+
+
+        <?php
+        $filter = [];
+        $options = ['sort' => ['Amountsold' => -1]];
+        $result1Array = $collection->find($filter,$options)->toArray();
+        $result2Array = array_slice($result1Array, 0, 3);
+    
+    
+        foreach ($result2Array as $document) {
+            $Pid = $document["_id"];
+            $Pname = $document["Name"];
+            $Pprice = $document["Price"];
+            $Pquantity = $document["Quantity"];
+            $Pimage = $document["Image"];
+            $Pamount = $document["Amountsold"];
+            echo'<div class="product">';
+            echo'<img src="'.$Pimage.'" alt="Product 1">';
+            echo'<p>'.$Pname.'</p>';
+            echo'<p>Price:'.$Pprice.'</p>';
+            echo'<p>Quantity:'.$Pquantity.'</p>';
+            echo'<button onclick= \'addToBasket("' . $document["_id"] . '", "' . $document["Name"] . '","' . $document["Price"] . '")\' class="add-to-cart" data-product-id="1">Add to Cart</button>';
+            echo'</div>';
+            
+        }
+        ?>
+    </div>

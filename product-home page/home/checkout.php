@@ -16,7 +16,7 @@ if (array_key_exists("username", $_SESSION) )
     echo '<h1>Products Sent to Server</h1>';
     for($i=0; $i<count($productArray); $i++)
     {
-        
+        $productId = $productArray[$i]['id'];
         $productName = $productArray[$i]['name'];
         $productPrice = $productArray[$i]['price'];
         echo '<p>Username: '. $Username . 'Product ID: ' . $productArray[$i]['id'] . '  Name:' . $productArray[$i]['name'] . '  Price:' . $productArray[$i]['price'] . '</p>';
@@ -31,6 +31,7 @@ if (array_key_exists("username", $_SESSION) )
         $db = $mongoClient->local;
 
         $collection = $db->order;
+        
 
         
 
@@ -49,6 +50,39 @@ if (array_key_exists("username", $_SESSION) )
     } 
     else
     {
+        $collection1 = $db->product;
+
+
+        $replaceCriteria = [
+            "_id" => new MongoDB\BSON\ObjectID($productId)
+        ];
+
+
+        $criteriaToFind = ["Name" => $productName];
+
+        $resultArray = $collection1->find($criteriaToFind)->toArray();
+        foreach ($resultArray as $document) {
+            $Pid = $document["_id"];
+            $Pname = $document["Name"];
+            $Pprice = $document["Price"];
+            $Pquantity = $document["Quantity"];
+            $Pimage = $document["Image"];
+            $Pamountsold = $document["Amountsold"];
+
+            $customerData = [
+                "Name" => $Pname,
+                "Price" => $Pprice,
+                "Quantity" => $Pquantity - 1,
+                "Image" => $Pimage,
+                "Amountsold" => $Pamountsold + 1
+            ];
+            
+            //Replace customer data for this ID
+            $updateRes = $db->product->replaceOne($replaceCriteria, $customerData);
+
+        }
+
+
         echo'<script src="..\home\basket.js"></script>';
         echo '<script>emptyBasket()</script>';
         echo '<script>alert("Order Successfully Added")</script>';
