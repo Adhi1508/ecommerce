@@ -34,7 +34,7 @@
     else if (count($resultArray) > 1) 
     {
         echo '<script>alert("Database error: Multiple user have the same Username. Please input again!");</script>';
-        echo '<script>window.location.href="login.php";</script>';
+        echo '<script>window.location.href="./login.php";</script>';
         return;
     }
 
@@ -45,7 +45,7 @@
         if ($admin['Password'] != $password)
         {
             echo '<script>alert("Incorrect password.");</script>';
-            echo '<script>window.location.href="login.php";</script>';
+            echo '<script>window.location.href="./login.php";</script>';
             return;
         }
         else

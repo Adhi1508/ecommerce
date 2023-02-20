@@ -252,11 +252,11 @@ footer p {
 #conlogin {
     width: 100%;
     margin-top: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 500px;
     width: 500px;
     translate: 50%;
-    margin-left: 14%;
+    margin-left: 19%;
     border: 10px solid #708188;
     background-color: #25363d;
     align-content: center;
@@ -330,6 +330,61 @@ footer p {
     background-size: 105%;
 }
 
+#conlogout {
+    margin-top: 40px;
+    height: 300px;
+    width: 450px;
+    translate: 50%;
+    margin-left: 20%;
+    background-color: #25363d;
+    border: 5px solid #708188;
+  }
+
+.LogoutBody {
+    margin-bottom: 15rem;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logout1but {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    letter-spacing: 6px;
+    cursor: pointer;
+    margin-left:15%;
+  }
+  #logout2but {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-align:center;
+    height: 50px;
+    width: 100px;
+    letter-spacing: 6px;
+    cursor: pointer;
+    margin-left:25%;
+  }
+
+  #Logout-para{
+
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 20px;
+  }
 
 
 /**************** End of the login *************/

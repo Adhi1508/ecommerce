@@ -19,7 +19,7 @@
             <li class="cart"><a href="./cms/cms.php"><i
                         class="fas fa-dumbbell"></i><span></span><span></span><span>FitFury</span></a></li>
             <li><a href="./cms.php">Home</a></li>
-            <li><a href="./login.php">Login</a></li>
+            <li><a href="./logout.php">Logout</a></li>
         </ul>
     </nav>
     <!-- End of navigation bar -->

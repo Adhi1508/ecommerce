@@ -16,7 +16,6 @@
         <ul>
             <li class="cart"><a href="#cart"><i
                         class="fas fa-dumbbell"></i><span></span><span></span><span>FitFury</span></a></li>
-            <li><a href="cms.php">Home</a></li>
             <li><a href="login.php">Login</a></li>
         </ul>
     </nav>
@@ -27,10 +26,11 @@
         <form onsubmit action="getadminLogin.php" method="post">
             <div id="conlogin">
                 <h2 id="Login-title">ADMIN LOGIN</h2>
-                <img src="../images/LogIcon.jpg" class="Login-icon">
-
+                <img src="images/LogIcon.jpg" class="Login-icon">
+                <br>
                 <!-- Entry box for username -->
-                <input class="loginput" id="uname" type="text" placeholder="Username" name="uname" required />
+
+                <input class="loginput" id="uname" type="username" placeholder="Username" name="uname" required />
                 <br>
 
                 <!-- Entry box for password -->
@@ -38,7 +38,7 @@
                 <br>
 
                 <!-- login button -->
-                <button id="logbut" type="submit">login</button>
+                <button id="logbut" type="submit">LOGIN</button>
             </div>
         </form>
     </div>
