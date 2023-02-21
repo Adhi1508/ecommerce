@@ -31,34 +31,61 @@
 
     <!-- Start of table customer orders -->
     <div class="cart-container">
-    <form>
-        <input type="text" id="references" name="ids" placeholder="ID:"><br><br><span></span>
-        <input type="submit" onclick="deleteOrder(event)" value="Delete Order">
-    </form>
-        <table id="ServerOrder">
-            <!-- PHP loads product information -->        
-            <script>
-                window.onload= function() {
-                    loadOrder();
-                }
-            </script>
+        <table>
+            <thead>
+                <tr>
+                    <!-- The heading of the table -->
+                    <th>Reference</th>
+                    <th>Username</th>
+                    <th>Product Name</th>
+                    <th>Price(Rs)</th>
+                    <th>Quantity</th>
+                    <th>Total(Rs)</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <tr>
+                    <!-- The details of the table -->
+                    <td>C1GY</td>
+                    <td>Adhiveer</td>
+                    <td>Dumbbell 2kg</td>
+                    <td>500</td>
+                    <td>2</td>
+                    <td>1000</td>
+                    <td>20/03/22</td>
 
+                    <!-- A delete button for each row at the end of the table -->
+                    <td><button class="action-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <!-- The details of the table -->
+                    <td>C45T</td>
+                    <td>Lokesh</td>
+                    <td>Dumbell 4kg</td>
+                    <td>750</td>
+                    <td>2</td>
+                    <td>1500</td>
+                    <td>01/03/22</td>
 
-            <!-- <script>
-                $(document).on('click', '.action-btn', function() {
-                    var orderID = $(this).data('orderid');
-                    $.ajax({
-                        url: 'delete_order.php',
-                        method: 'POST',
-                        data: { orderID: orderID },
-                        success: function(response) {
-                            // Reload the table
-                            $('#orders-table').load(' #orders-table > table');
-                        }
-                    });
-                });
+                    <!-- A delete button for each row at the end of the table -->
+                    <td><button class="action-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <!-- The details of the table -->
+                    <td>C265</td>
+                    <td>Chetan</td>
+                    <td>Dumbell 8kg</td>
+                    <td>1000</td>
+                    <td>5</td>
+                    <td>5000</td>
+                    <td>25/03/22</td>
 
-            </script> -->
+                    <!-- A delete button for each row at the end of the table -->
+                    <td><button class="action-btn">Delete</button></td>
+                </tr>
+            </tbody>
         </table>
     </div>
     <!-- End of table customer orders -->
@@ -115,8 +142,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="delete_product.js"></script>
     <script src="edit_product.js"></script>
-    <script src="list_orders.js"></script>
-    <script src="delete_order.js"></script>
 </body>
 
 </html>
