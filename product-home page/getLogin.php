@@ -11,7 +11,7 @@
     $db = $mongoClient->ecommerce;
 
     //Select a collection 
-    $collection = $db->staff;
+    $collection = $db->customer;
 
     //Get email and password strings - need to filter input to reduce chances of SQL injection etc.
     $username= filter_input(INPUT_POST, 'uname', FILTER_SANITIZE_STRING);
@@ -27,14 +27,14 @@
     if (count($resultArray) == 0) 
     {
         echo '<script>alert("Invalid Account. Please input again!");</script>';
-        echo '<script>window.location.href="./index.php";</script>';
+        echo '<script>window.location.href="./login.php";</script>';
         return;
     } 
 
     else if (count($resultArray) > 1) 
     {
         echo '<script>alert("Database error: Multiple user have the same Username. Please input again!");</script>';
-        echo '<script>window.location.href="./index.php";</script>';
+        echo '<script>window.location.href="./login.php";</script>';
         return;
     }
 
@@ -45,7 +45,7 @@
         if ($admin['Password'] != $password)
         {
             echo '<script>alert("Incorrect password.");</script>';
-            echo '<script>window.location.href="./index.php";</script>';
+            echo '<script>window.location.href="./login.php";</script>';
             return;
         }
         else
@@ -55,8 +55,22 @@
     
             //Inform web page that login is successful
             echo '<script>alert("Successfully logged in");</script>';
-            echo '<script>window.location.href="cms.php";</script>';
+            echo '<script>window.location.href="./index.php";</script>';
             
         }
     }
    
+  
+        
+    
+
+
+
+    
+
+    
+
+
+
+
+    

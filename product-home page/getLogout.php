@@ -1,5 +1,6 @@
 <?php
-    
+    echo'<script src="./basket.js"></script>';
+    echo '<script>emptyBasket()</script>';
     
     session_start();
 

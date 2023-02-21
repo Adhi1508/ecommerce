@@ -4,7 +4,7 @@
 //Connect to MongoDB and select database
 require __DIR__ . '/vendor/autoload.php';
 $mongoClient = (new MongoDB\Client);
-$db = $mongoClient->local;
+$db = $mongoClient->ecommerce;
 
 //Find all products
 $products = $db->product->find();

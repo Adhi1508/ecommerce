@@ -7,7 +7,7 @@ require __DIR__ . '/vendor/autoload.php';
 $mongoClient = (new MongoDB\Client);
 
 //Select a database
-$db = $mongoClient->local;
+$db = $mongoClient->ecommerce;
 
 //Extract the customer details 
 $name= filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
